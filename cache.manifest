@@ -1,0 +1,34 @@
+CACHE MANIFEST
+# 2011-03-20 21:14:44 +0100
+sfx/nuke.ogg
+sfx/thud.ogg
+sfx/ping.ogg
+sfx/explosion.ogg
+sfx/pong.ogg
+gfx/brick_red.png
+gfx/brick_orange.png
+gfx/brick.png
+gfx/brick_blue.png
+gfx/brick_hard0.png
+gfx/brick_hard1.png
+gfx/brick_xtraball.png
+gfx/paddle_light.png
+gfx/ball.png
+gfx/paddle.png
+gfx/background_menu.jpg
+gfx/explosion.png
+gfx/brick_immortal.png
+gfx/brick_hard2.png
+gfx/brick_green.png
+gfx/brick_tnt.png
+gfx/background.jpg
+gfx/brick_nuke.png
+sfx/multiball.ogg
+sfx/soundscape.ogg
+break.js
+yepnope.js
+style.css
+index.html
+NETWORK:
+/*
+*

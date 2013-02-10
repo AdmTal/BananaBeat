@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    font-family: geo, monospace;
+    color: #84a4ff;
+    font-size: 14px;
+}
+
+* { margin: 0; padding: 0; }
+
+#box {
+    border: 5px solid #84a4ff;
+    box-shadow: 0 0 25px #84a4ff;
+    -webkit-box-shadow: 0 0 25px #84a4ff;
+    -moz-box-shadow: 0 0 25px #84a4ff;
+    margin: auto;
+    width: 640px;
+    height: 480px;
+    overflow: hidden;
+    margin-top: 20px;
+    display: block;
+    background-image: url('gfx/background_menu.jpg')
+}
+#perfhub {
+    display: none;
+}
+#frame {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    width: 3000px;
+    -webkit-transition: left 0.5s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+}
+#frame > * {
+    float: left;
+    width: 640px;
+    height: 480px;
+}
+
+#menu ul {
+    padding-top: 48px
+}
+
+#menu li {
+    list-style-type: none;
+    font-size: 48px;
+}
+#frame li {
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+    cursor: pointer;
+}
+.navigation  {
+    font-size: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 68px;
+    float: right;
+}
+
+.navigation li {
+    float: left;
+    margin-right: 50px;
+    text-decoration underline;
+    cursor: pointer;
+}
+
+.navigation li:before {
+    content: '<  ';
+}
+
+
+#frame li:hover {
+    color: white;
+}
+
+#frame h1 {
+    font-size: 48px;
+    margin-top: 48px;
+}
+#highscores h1, #credits h1 {
+    float: left;
+}
+
+#frame form {
+    clear: both;
+    margin-top: 124px;
+    display: block;
+}
+
+#highscores textarea {
+    width: 532px;
+    height: 65px;
+    margin-top: 24px;
+    resize: none;
+    display: block;
+    clear: both;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 1.2em;
+    font-family: geo;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid transparent;
+}
+#highscores textarea:focus, #highscores input:focus {
+    -moz-box-shadow: 0 0 10px #84a4ff;
+    -webkit-box-shadow: 0 0 7px #84a4ff;
+    box-shadow: 0 0 7px #84a4ff;
+    border: 2px solid #84a4ff;
+    outline: none;
+    z-index: 1
+}
+#highscores label {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#highscores input[type="submit"] {
+    /* stolen from formalize.me */
+  font-family: geo;
+  font-size: 14px;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #ddd url(../images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  outline: 0;
+  overflow: visible;
+  padding: 3px 10px 4px;
+  text-shadow: #fff 0 1px 1px;
+  width: auto;
+  float: right;
+  margin-right: 50px;
+}
+
+#highscores .twtr-hd {
+    padding: 3px;
+}
+
+#frame h1, #menu li, #frame form {
+    margin-left: 48px;
+}
+
+#menu h1 {
+    font-size: 64px;
+}
+
+.continue {
+    display: none;
+}
+
+#highscores > div, #credits > * {
+    margin-left: 48px;
+}
+
+#twatr {
+    clear: both;
+}
+
+#highscores .twtr-ft {
+    opacity: 0.8;
+}
+
+#credits table {
+    clear: both;
+    font-size: 24px;
+}
+#credits td {
+    vertical-align: top;
+    width: 240px;
+}
+#credits td:last-child {
+    width: 300px;
+}
+
+#credits h2 {
+    line-height: 2em;
+}
+
+#credits a {
+    color: white;
+}
+
+#header {
+    font-size: 2em;
+    background-color: #111;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.0, rgb(31,31,31)),
+        color-stop(1.0, rgb(7,7,7))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(21,21,21) 0%,
+        rgb(17,17,17) 100%
+    );
+    height: 100px;
+    border: solid #444;
+    border-width: 2px 0px;
+    margin-bottom: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+#header div {
+    padding: 10px;
+    padding-top: 20px;
+    width: auto;
+    float: left;
+}
+#header ul {
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+}
+#header ul li {
+    height: 82px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 10px;
+}
+#header a {
+    color: #84a4ff;
+    text-decoration: none;
+}
+
+a.twitter-share-button { display: block; width: 110px; height: 20px; visibility: hidden;}
